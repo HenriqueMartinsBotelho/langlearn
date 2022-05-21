@@ -3,9 +3,10 @@ import React from "react";
 interface AvisoProps {
   message: string;
   repository: string;
+  reponame: string;
 }
 
-export const Aviso = ({ message, repository }: AvisoProps) => {
+export const Aviso = ({ message, repository, reponame }: AvisoProps) => {
   return (
     <div
       style={{
@@ -30,7 +31,7 @@ export const Aviso = ({ message, repository }: AvisoProps) => {
       >
         GitHub:{" "}
         <a style={{ color: "pink" }} href={repository}>
-          {repository}
+          {reponame}
         </a>
       </span>
       <span style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
